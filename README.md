@@ -5,6 +5,4 @@
 - 16 頁繪本插圖與全文，可放大翻頁閱讀
 - 約 6 分鐘配音動畫（HLS，1080p / 720p 自動切換），可依頁跳轉
 
-動畫由 Google Flow（Veo 3.1）依繪本插圖生成，旁白為 AI 語音合成。
-
 網頁內容由 `build.py` 依 `template.html` 產生 `index.html`。
