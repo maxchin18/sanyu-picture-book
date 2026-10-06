@@ -91,7 +91,7 @@
   const reader = document.getElementById("reader"), rImg = document.getElementById("rImg"),
         rNo = document.getElementById("rNo"), rCount = document.getElementById("rCount"),
         rTitle = document.getElementById("rTitle"), rBody = document.getElementById("rBody"),
-        rPlay = document.getElementById("rPlay"), rPrev = document.getElementById("rPrev"), rNext = document.getElementById("rNext");
+        rPrev = document.getElementById("rPrev"), rNext = document.getElementById("rNext");
   let cur = 1, lastFocus = null;
   function show(n) {
     cur = Math.max(1, Math.min(16, n));
@@ -100,7 +100,6 @@
     rNo.textContent = "No. " + id; rCount.textContent = `${cur} / 16`;
     rTitle.textContent = pg.t; rBody.innerHTML = "";
     pg.p.forEach(s => { const p = document.createElement("p"); p.textContent = s; rBody.appendChild(p); });
-    rPlay.dataset.t = (STARTS[cur] + .4).toFixed(2);
     rPrev.disabled = cur === 1; rNext.disabled = cur === 16;
     const nxt = new Image(); if (cur < 16) nxt.src = `img/p${String(cur + 1).padStart(2, "0")}.webp`;
   }

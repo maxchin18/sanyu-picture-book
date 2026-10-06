@@ -71,7 +71,6 @@ for i, (title, paras) in enumerate(PAGES, 1):
     <h3>{e(title)}</h3>
     {body}
     <div class="page-actions">
-      <button class="btn-line" data-t="{STARTS[i]+0.4:.2f}" data-page="{i}">▶ 觀看本頁動畫</button>
       <button class="btn-line ghost" data-open="{i}">放大閱讀</button>
     </div>
   </div>
