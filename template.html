@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>三魚海味探索繪本</title>
+<meta name="description" content="跟著小軒從東港喜宴上的翻魚禁忌出發，認識黑鮪魚、烏魚與龍虎斑的海洋食農繪本，附 1080p 配音動畫。">
+<meta property="og:title" content="三魚海味探索繪本">
+<meta property="og:description" content="東港・蚵仔寮・大潭　海洋食農之旅｜16 頁繪本與配音動畫">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#232a45">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23232a45'/%3E%3Cpath d='M10 34c8-9 26-12 38-6 4 2 6 1 8-3-1 6-3 10-8 11-12 4-28 4-38-2z' fill='none' stroke='%23e2c179' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif+TC:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg class="defs" aria-hidden="true" width="0" height="0">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6e2a6"/><stop offset=".45" stop-color="#d4a94f"/>
+      <stop offset=".7" stop-color="#f1d590"/><stop offset="1" stop-color="#a87a2c"/>
+    </linearGradient>
+    <filter id="wash" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="38"/>
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+</svg>
+
+<canvas id="flecks" aria-hidden="true"></canvas>
+<div class="paper" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="#top"><span class="brand-mark">◈</span> 三魚海味</a>
+  <nav>
+    <a href="#film">動畫</a>
+    <a href="#fish">三魚</a>
+    <a href="#book">繪本</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-wash" aria-hidden="true">
+      <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    </div>
+    <svg class="whale" viewBox="0 0 700 320" aria-hidden="true">
+      <g class="whale-wash" filter="url(#wash)">
+        <path d="M40 150C60 120 140 105 230 108C330 112 420 120 480 135C520 145 545 150 560 148C575 120 590 100 612 94C602 120 592 140 586 151C602 166 616 190 616 208C596 197 576 177 560 161C520 176 440 190 340 192C240 194 140 190 90 180C60 174 42 165 40 150Z" fill="#1f2b52" opacity=".85"/>
+        <path d="M110 120C180 104 300 110 420 128C380 150 260 160 150 150Z" fill="#8fa3c9" opacity=".55"/>
+      </g>
+      <g class="whale-line" fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
+        <path class="draw" stroke-width="2.2" d="M40 150C60 120 140 105 230 108C330 112 420 120 480 135C520 145 545 150 560 148C575 120 590 100 612 94C602 120 592 140 586 151C602 166 616 190 616 208C596 197 576 177 560 161C520 176 440 190 340 192C240 194 140 190 90 180C60 174 42 165 40 150Z"/>
+        <path class="draw" stroke-width="1.6" d="M46 154C92 160 150 162 212 160"/>
+        <path class="draw thin" d="M58 163C100 172 160 177 222 176M66 170C110 180 168 184 230 184M80 176C120 186 180 189 238 189M100 181C140 188 190 191 250 192"/>
+        <path class="draw" stroke-width="2" d="M205 182C222 214 252 248 292 267C302 272 306 262 298 254C272 230 252 205 242 186"/>
+        <path class="draw thin" d="M300 112C360 118 420 126 470 138M560 148C566 152 572 156 578 160"/>
+      </g>
+      <g class="leaf" fill="url(#gold)"><circle cx="314.3" cy="123.3" r="2.39" opacity="0.78"/><circle cx="364.1" cy="110.4" r="1.13" opacity="0.78"/><circle cx="314.9" cy="99.9" r="1.84" opacity="0.59"/><circle cx="433.2" cy="125.9" r="3.22" opacity="0.57"/><circle cx="579.9" cy="114.0" r="1.99" opacity="0.62"/><circle cx="320.3" cy="135.1" r="0.72" opacity="0.58"/><circle cx="419.1" cy="127.7" r="2.58" opacity="0.75"/><circle cx="414.7" cy="127.3" r="2.42" opacity="0.84"/><circle cx="296.8" cy="118.0" r="1.98" opacity="1.0"/><circle cx="415.0" cy="144.8" r="0.60" opacity="0.87"/><circle cx="379.8" cy="127.3" r="0.68" opacity="0.89"/><circle cx="425.9" cy="96.0" r="2.65" opacity="0.72"/><circle cx="531.0" cy="110.9" r="1.80" opacity="0.96"/><circle cx="400.2" cy="79.4" r="1.50" opacity="0.73"/><circle cx="488.4" cy="126.7" r="0.77" opacity="0.59"/><circle cx="345.4" cy="100.1" r="4.76" opacity="0.89"/><circle cx="438.8" cy="125.1" r="1.04" opacity="0.91"/><circle cx="414.6" cy="125.9" r="2.69" opacity="0.75"/><circle cx="441.4" cy="139.2" r="2.36" opacity="0.6"/><circle cx="473.7" cy="109.5" r="1.13" opacity="0.67"/><circle cx="524.2" cy="113.4" r="1.82" opacity="0.64"/><circle cx="537.2" cy="96.4" r="2.80" opacity="0.84"/><circle cx="570.3" cy="142.9" r="0.84" opacity="0.9"/><circle cx="452.7" cy="112.4" r="1.90" opacity="0.58"/><circle cx="478.1" cy="127.9" r="0.61" opacity="0.72"/><circle cx="494.8" cy="84.1" r="1.89" opacity="0.77"/><circle cx="448.4" cy="111.7" r="0.95" opacity="0.96"/><circle cx="541.1" cy="133.6" r="1.81" opacity="0.64"/><circle cx="513.7" cy="85.3" r="2.03" opacity="0.95"/><circle cx="612.5" cy="113.0" r="1.70" opacity="0.6"/><circle cx="619.6" cy="139.1" r="0.72" opacity="0.67"/><circle cx="582.3" cy="138.8" r="2.79" opacity="0.68"/><circle cx="548.8" cy="153.6" r="1.74" opacity="0.8"/><circle cx="532.1" cy="142.9" r="2.60" opacity="0.68"/><circle cx="543.5" cy="122.0" r="2.00" opacity="0.75"/><circle cx="523.3" cy="138.4" r="0.94" opacity="0.72"/><circle cx="500.9" cy="123.8" r="3.09" opacity="0.99"/><circle cx="584.2" cy="112.8" r="2.93" opacity="0.81"/><circle cx="526.8" cy="131.7" r="4.65" opacity="0.87"/><circle cx="529.9" cy="131.6" r="0.59" opacity="0.84"/><circle cx="455.6" cy="131.2" r="3.56" opacity="0.58"/><circle cx="659.2" cy="99.8" r="1.39" opacity="0.96"/><circle cx="514.9" cy="100.0" r="1.63" opacity="0.71"/><circle cx="434.4" cy="112.7" r="4.25" opacity="0.94"/><circle cx="458.6" cy="143.8" r="2.12" opacity="0.83"/><circle cx="480.5" cy="110.4" r="2.19" opacity="0.82"/><circle cx="570.0" cy="140.4" r="4.41" opacity="0.88"/><circle cx="516.5" cy="105.6" r="2.50" opacity="0.81"/><circle cx="553.8" cy="108.9" r="3.24" opacity="0.56"/><circle cx="621.8" cy="60.4" r="1.79" opacity="0.65"/><circle cx="590.3" cy="54.7" r="3.72" opacity="0.67"/><circle cx="561.4" cy="113.3" r="0.61" opacity="0.86"/><circle cx="604.7" cy="105.5" r="2.82" opacity="0.75"/><circle cx="578.7" cy="108.8" r="1.56" opacity="0.85"/><circle cx="608.8" cy="118.2" r="1.95" opacity="0.95"/><circle cx="545.9" cy="58.3" r="2.17" opacity="0.69"/><circle cx="620.0" cy="114.5" r="2.42" opacity="0.87"/><circle cx="556.8" cy="111.0" r="0.97" opacity="0.63"/><circle cx="580.1" cy="95.3" r="0.94" opacity="0.83"/><circle cx="626.2" cy="61.9" r="0.56" opacity="0.93"/><circle cx="628.4" cy="84.3" r="0.93" opacity="0.94"/><circle cx="603.0" cy="133.5" r="1.27" opacity="0.81"/><circle cx="583.3" cy="137.5" r="1.52" opacity="0.75"/><circle cx="601.7" cy="143.8" r="1.05" opacity="0.66"/><circle cx="605.1" cy="95.2" r="1.92" opacity="0.83"/><circle cx="579.5" cy="57.4" r="3.35" opacity="0.98"/><circle cx="593.1" cy="69.7" r="1.68" opacity="0.55"/><circle cx="602.5" cy="41.2" r="1.02" opacity="0.63"/><circle cx="596.6" cy="115.4" r="1.25" opacity="0.83"/><circle cx="570.2" cy="89.2" r="2.40" opacity="0.91"/><circle cx="609.2" cy="80.9" r="3.27" opacity="0.61"/><circle cx="582.9" cy="47.7" r="1.27" opacity="0.96"/><circle cx="575.9" cy="115.2" r="2.96" opacity="0.97"/><circle cx="568.1" cy="45.6" r="1.12" opacity="0.64"/><circle cx="591.6" cy="33.5" r="2.40" opacity="0.65"/><circle cx="567.9" cy="156.1" r="3.63" opacity="0.99"/><circle cx="555.2" cy="75.8" r="2.28" opacity="0.94"/><circle cx="651.6" cy="80.8" r="1.14" opacity="0.75"/><circle cx="202.5" cy="106.7" r="0.95" opacity="0.91"/><circle cx="301.1" cy="128.5" r="1.83" opacity="0.63"/><circle cx="246.2" cy="127.2" r="1.18" opacity="0.78"/><circle cx="326.3" cy="108.8" r="4.09" opacity="0.86"/><circle cx="365.9" cy="108.1" r="1.27" opacity="0.65"/><circle cx="292.0" cy="103.8" r="0.76" opacity="0.88"/><circle cx="253.1" cy="102.7" r="1.85" opacity="0.69"/><circle cx="236.0" cy="97.8" r="2.99" opacity="0.96"/><circle cx="330.4" cy="130.8" r="2.77" opacity="0.81"/><circle cx="285.6" cy="115.8" r="2.74" opacity="0.78"/><circle cx="288.8" cy="110.5" r="2.75" opacity="0.73"/><circle cx="286.2" cy="116.1" r="2.82" opacity="0.77"/><circle cx="292.0" cy="108.6" r="2.41" opacity="0.98"/><circle cx="285.1" cy="119.0" r="1.20" opacity="0.76"/><circle cx="669.8" cy="90.5" r="2.14" opacity="0.76"/><circle cx="561.3" cy="49.3" r="1.63" opacity="0.83"/><circle cx="658.8" cy="50.5" r="0.57" opacity="0.64"/><circle cx="631.6" cy="68.7" r="3.37" opacity="0.69"/><circle cx="605.8" cy="103.9" r="2.93" opacity="0.61"/><circle cx="679.7" cy="29.7" r="0.59" opacity="0.64"/><circle cx="597.9" cy="51.9" r="1.89" opacity="0.79"/><circle cx="669.1" cy="74.5" r="1.58" opacity="0.83"/><circle cx="608.3" cy="22.5" r="2.05" opacity="0.94"/><circle cx="595.7" cy="67.1" r="3.60" opacity="0.91"/><circle cx="668.5" cy="40.0" r="2.21" opacity="0.65"/><circle cx="723.1" cy="143.6" r="0.54" opacity="0.61"/><circle cx="644.3" cy="124.3" r="0.55" opacity="0.92"/><circle cx="658.0" cy="-2.3" r="2.09" opacity="0.61"/><circle cx="590.2" cy="94.9" r="1.76" opacity="0.86"/><circle cx="643.0" cy="149.2" r="3.14" opacity="0.6"/></g>
+      <g fill="url(#gold)">
+        <circle cx="122" cy="142" r="3.2"/><circle cx="70" cy="131" r="2"/><circle cx="84" cy="125" r="2"/>
+        <circle cx="98" cy="120" r="2"/><circle cx="112" cy="116" r="1.8"/><circle cx="127" cy="113" r="1.6"/>
+      </g>
+    </svg>
+    <div class="hero-text">
+      <p class="script hero-script">A Picture Book of Three Fish &amp; the Sea</p>
+      <h1>三魚海味<br class="br-m">探索繪本</h1>
+      <p class="hero-sub">東港・蚵仔寮・大潭　海洋食農之旅</p>
+      <div class="hero-cta">
+        <a class="btn-gold" href="#film">▶ 觀看配音動畫</a>
+        <a class="btn-line" href="#book">翻閱繪本</a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#intro" aria-label="往下閱讀"><span></span></a>
+  </section>
+
+  <section class="intro reveal" id="intro">
+    <span class="gold-rule" aria-hidden="true"></span>
+    <p class="lede">東港喜宴上，爸爸一句「先別翻魚！」，讓好奇的小軒展開一趟海洋探索之旅——
+      從第一鮪進港的熱鬧魚市、冬季洄游的烏金，到大潭魚塭裡的龍虎斑，
+      最後在迎王祭典的星空下，明白海洋文化如何連結過去、現在與未來。</p>
+    <ul class="facts">
+      <li><b>16</b><span>頁插圖</span></li>
+      <li><b>3</b><span>種海洋魚類</span></li>
+      <li><b>6</b><span>分鐘配音動畫</span></li>
+    </ul>
+  </section>
+
+  <section class="film" id="film">
+    <div class="section-head reveal">
+      <span class="script">The Animated Film</span>
+      <h2>配音動畫</h2>
+      <p>點選下方章節，可直接跳到該頁的動畫。</p>
+    </div>
+    <div class="player reveal">
+      <div class="frame">
+        <video id="video" controls playsinline preload="none" poster="img/poster.jpg"></video>
+        <button class="big-play" id="bigPlay" aria-label="播放動畫"><span>▶</span></button>
+      </div>
+      <div class="now"><span class="script" id="nowNo">Prologue</span><span id="nowTitle">三魚海味探索繪本</span></div>
+    </div>
+    <ol class="chips reveal" id="chips">
+{{CHIPS}}
+    </ol>
+  </section>
+
+  <section class="fish" id="fish">
+    <div class="section-head reveal">
+      <span class="script">Three Fish</span>
+      <h2>三魚海味</h2>
+      <p>故事裡的三位海洋主角</p>
+    </div>
+    <div class="fish-grid">
+{{FISH}}
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="section-head reveal">
+      <span class="script">The Picture Book</span>
+      <h2>繪本全文</h2>
+      <p>點插圖可放大閱讀，用左右鍵或滑動翻頁。</p>
+    </div>
+{{PAGES}}
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="gold-rule" aria-hidden="true"></span>
+  <p class="script">Thank you for reading</p>
+  <p>三魚海味探索繪本　·　土城國小 遊學食農</p>
+  <p class="small">動畫由 Google Flow（Veo 3.1）依繪本插圖生成；旁白為 AI 語音合成。</p>
+</footer>
+
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-label="繪本閱讀" hidden>
+  <button class="r-close" id="rClose" aria-label="關閉">✕</button>
+  <button class="r-nav r-prev" id="rPrev" aria-label="上一頁">‹</button>
+  <button class="r-nav r-next" id="rNext" aria-label="下一頁">›</button>
+  <div class="r-stage">
+    <img id="rImg" alt="">
+    <div class="r-text">
+      <div class="page-meta"><span class="script" id="rNo"></span><span class="tag" id="rCount"></span></div>
+      <h3 id="rTitle"></h3>
+      <div id="rBody"></div>
+      <button class="btn-line" id="rPlay">▶ 觀看本頁動畫</button>
+    </div>
+  </div>
+</div>
+
+<script>window.BOOK = {{DATA}}; window.STARTS = {{STARTS}};</script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

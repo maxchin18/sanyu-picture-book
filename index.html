@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>三魚海味探索繪本</title>
+<meta name="description" content="跟著小軒從東港喜宴上的翻魚禁忌出發，認識黑鮪魚、烏魚與龍虎斑的海洋食農繪本，附 1080p 配音動畫。">
+<meta property="og:title" content="三魚海味探索繪本">
+<meta property="og:description" content="東港・蚵仔寮・大潭　海洋食農之旅｜16 頁繪本與配音動畫">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#232a45">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23232a45'/%3E%3Cpath d='M10 34c8-9 26-12 38-6 4 2 6 1 8-3-1 6-3 10-8 11-12 4-28 4-38-2z' fill='none' stroke='%23e2c179' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif+TC:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg class="defs" aria-hidden="true" width="0" height="0">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6e2a6"/><stop offset=".45" stop-color="#d4a94f"/>
+      <stop offset=".7" stop-color="#f1d590"/><stop offset="1" stop-color="#a87a2c"/>
+    </linearGradient>
+    <filter id="wash" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="38"/>
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+</svg>
+
+<canvas id="flecks" aria-hidden="true"></canvas>
+<div class="paper" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="#top"><span class="brand-mark">◈</span> 三魚海味</a>
+  <nav>
+    <a href="#film">動畫</a>
+    <a href="#fish">三魚</a>
+    <a href="#book">繪本</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-wash" aria-hidden="true">
+      <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    </div>
+    <svg class="whale" viewBox="0 0 700 320" aria-hidden="true">
+      <g class="whale-wash" filter="url(#wash)">
+        <path d="M40 150C60 120 140 105 230 108C330 112 420 120 480 135C520 145 545 150 560 148C575 120 590 100 612 94C602 120 592 140 586 151C602 166 616 190 616 208C596 197 576 177 560 161C520 176 440 190 340 192C240 194 140 190 90 180C60 174 42 165 40 150Z" fill="#1f2b52" opacity=".85"/>
+        <path d="M110 120C180 104 300 110 420 128C380 150 260 160 150 150Z" fill="#8fa3c9" opacity=".55"/>
+      </g>
+      <g class="whale-line" fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
+        <path class="draw" stroke-width="2.2" d="M40 150C60 120 140 105 230 108C330 112 420 120 480 135C520 145 545 150 560 148C575 120 590 100 612 94C602 120 592 140 586 151C602 166 616 190 616 208C596 197 576 177 560 161C520 176 440 190 340 192C240 194 140 190 90 180C60 174 42 165 40 150Z"/>
+        <path class="draw" stroke-width="1.6" d="M46 154C92 160 150 162 212 160"/>
+        <path class="draw thin" d="M58 163C100 172 160 177 222 176M66 170C110 180 168 184 230 184M80 176C120 186 180 189 238 189M100 181C140 188 190 191 250 192"/>
+        <path class="draw" stroke-width="2" d="M205 182C222 214 252 248 292 267C302 272 306 262 298 254C272 230 252 205 242 186"/>
+        <path class="draw thin" d="M300 112C360 118 420 126 470 138M560 148C566 152 572 156 578 160"/>
+      </g>
+      <g class="leaf" fill="url(#gold)"><circle cx="314.3" cy="123.3" r="2.39" opacity="0.78"/><circle cx="364.1" cy="110.4" r="1.13" opacity="0.78"/><circle cx="314.9" cy="99.9" r="1.84" opacity="0.59"/><circle cx="433.2" cy="125.9" r="3.22" opacity="0.57"/><circle cx="579.9" cy="114.0" r="1.99" opacity="0.62"/><circle cx="320.3" cy="135.1" r="0.72" opacity="0.58"/><circle cx="419.1" cy="127.7" r="2.58" opacity="0.75"/><circle cx="414.7" cy="127.3" r="2.42" opacity="0.84"/><circle cx="296.8" cy="118.0" r="1.98" opacity="1.0"/><circle cx="415.0" cy="144.8" r="0.60" opacity="0.87"/><circle cx="379.8" cy="127.3" r="0.68" opacity="0.89"/><circle cx="425.9" cy="96.0" r="2.65" opacity="0.72"/><circle cx="531.0" cy="110.9" r="1.80" opacity="0.96"/><circle cx="400.2" cy="79.4" r="1.50" opacity="0.73"/><circle cx="488.4" cy="126.7" r="0.77" opacity="0.59"/><circle cx="345.4" cy="100.1" r="4.76" opacity="0.89"/><circle cx="438.8" cy="125.1" r="1.04" opacity="0.91"/><circle cx="414.6" cy="125.9" r="2.69" opacity="0.75"/><circle cx="441.4" cy="139.2" r="2.36" opacity="0.6"/><circle cx="473.7" cy="109.5" r="1.13" opacity="0.67"/><circle cx="524.2" cy="113.4" r="1.82" opacity="0.64"/><circle cx="537.2" cy="96.4" r="2.80" opacity="0.84"/><circle cx="570.3" cy="142.9" r="0.84" opacity="0.9"/><circle cx="452.7" cy="112.4" r="1.90" opacity="0.58"/><circle cx="478.1" cy="127.9" r="0.61" opacity="0.72"/><circle cx="494.8" cy="84.1" r="1.89" opacity="0.77"/><circle cx="448.4" cy="111.7" r="0.95" opacity="0.96"/><circle cx="541.1" cy="133.6" r="1.81" opacity="0.64"/><circle cx="513.7" cy="85.3" r="2.03" opacity="0.95"/><circle cx="612.5" cy="113.0" r="1.70" opacity="0.6"/><circle cx="619.6" cy="139.1" r="0.72" opacity="0.67"/><circle cx="582.3" cy="138.8" r="2.79" opacity="0.68"/><circle cx="548.8" cy="153.6" r="1.74" opacity="0.8"/><circle cx="532.1" cy="142.9" r="2.60" opacity="0.68"/><circle cx="543.5" cy="122.0" r="2.00" opacity="0.75"/><circle cx="523.3" cy="138.4" r="0.94" opacity="0.72"/><circle cx="500.9" cy="123.8" r="3.09" opacity="0.99"/><circle cx="584.2" cy="112.8" r="2.93" opacity="0.81"/><circle cx="526.8" cy="131.7" r="4.65" opacity="0.87"/><circle cx="529.9" cy="131.6" r="0.59" opacity="0.84"/><circle cx="455.6" cy="131.2" r="3.56" opacity="0.58"/><circle cx="659.2" cy="99.8" r="1.39" opacity="0.96"/><circle cx="514.9" cy="100.0" r="1.63" opacity="0.71"/><circle cx="434.4" cy="112.7" r="4.25" opacity="0.94"/><circle cx="458.6" cy="143.8" r="2.12" opacity="0.83"/><circle cx="480.5" cy="110.4" r="2.19" opacity="0.82"/><circle cx="570.0" cy="140.4" r="4.41" opacity="0.88"/><circle cx="516.5" cy="105.6" r="2.50" opacity="0.81"/><circle cx="553.8" cy="108.9" r="3.24" opacity="0.56"/><circle cx="621.8" cy="60.4" r="1.79" opacity="0.65"/><circle cx="590.3" cy="54.7" r="3.72" opacity="0.67"/><circle cx="561.4" cy="113.3" r="0.61" opacity="0.86"/><circle cx="604.7" cy="105.5" r="2.82" opacity="0.75"/><circle cx="578.7" cy="108.8" r="1.56" opacity="0.85"/><circle cx="608.8" cy="118.2" r="1.95" opacity="0.95"/><circle cx="545.9" cy="58.3" r="2.17" opacity="0.69"/><circle cx="620.0" cy="114.5" r="2.42" opacity="0.87"/><circle cx="556.8" cy="111.0" r="0.97" opacity="0.63"/><circle cx="580.1" cy="95.3" r="0.94" opacity="0.83"/><circle cx="626.2" cy="61.9" r="0.56" opacity="0.93"/><circle cx="628.4" cy="84.3" r="0.93" opacity="0.94"/><circle cx="603.0" cy="133.5" r="1.27" opacity="0.81"/><circle cx="583.3" cy="137.5" r="1.52" opacity="0.75"/><circle cx="601.7" cy="143.8" r="1.05" opacity="0.66"/><circle cx="605.1" cy="95.2" r="1.92" opacity="0.83"/><circle cx="579.5" cy="57.4" r="3.35" opacity="0.98"/><circle cx="593.1" cy="69.7" r="1.68" opacity="0.55"/><circle cx="602.5" cy="41.2" r="1.02" opacity="0.63"/><circle cx="596.6" cy="115.4" r="1.25" opacity="0.83"/><circle cx="570.2" cy="89.2" r="2.40" opacity="0.91"/><circle cx="609.2" cy="80.9" r="3.27" opacity="0.61"/><circle cx="582.9" cy="47.7" r="1.27" opacity="0.96"/><circle cx="575.9" cy="115.2" r="2.96" opacity="0.97"/><circle cx="568.1" cy="45.6" r="1.12" opacity="0.64"/><circle cx="591.6" cy="33.5" r="2.40" opacity="0.65"/><circle cx="567.9" cy="156.1" r="3.63" opacity="0.99"/><circle cx="555.2" cy="75.8" r="2.28" opacity="0.94"/><circle cx="651.6" cy="80.8" r="1.14" opacity="0.75"/><circle cx="202.5" cy="106.7" r="0.95" opacity="0.91"/><circle cx="301.1" cy="128.5" r="1.83" opacity="0.63"/><circle cx="246.2" cy="127.2" r="1.18" opacity="0.78"/><circle cx="326.3" cy="108.8" r="4.09" opacity="0.86"/><circle cx="365.9" cy="108.1" r="1.27" opacity="0.65"/><circle cx="292.0" cy="103.8" r="0.76" opacity="0.88"/><circle cx="253.1" cy="102.7" r="1.85" opacity="0.69"/><circle cx="236.0" cy="97.8" r="2.99" opacity="0.96"/><circle cx="330.4" cy="130.8" r="2.77" opacity="0.81"/><circle cx="285.6" cy="115.8" r="2.74" opacity="0.78"/><circle cx="288.8" cy="110.5" r="2.75" opacity="0.73"/><circle cx="286.2" cy="116.1" r="2.82" opacity="0.77"/><circle cx="292.0" cy="108.6" r="2.41" opacity="0.98"/><circle cx="285.1" cy="119.0" r="1.20" opacity="0.76"/><circle cx="669.8" cy="90.5" r="2.14" opacity="0.76"/><circle cx="561.3" cy="49.3" r="1.63" opacity="0.83"/><circle cx="658.8" cy="50.5" r="0.57" opacity="0.64"/><circle cx="631.6" cy="68.7" r="3.37" opacity="0.69"/><circle cx="605.8" cy="103.9" r="2.93" opacity="0.61"/><circle cx="679.7" cy="29.7" r="0.59" opacity="0.64"/><circle cx="597.9" cy="51.9" r="1.89" opacity="0.79"/><circle cx="669.1" cy="74.5" r="1.58" opacity="0.83"/><circle cx="608.3" cy="22.5" r="2.05" opacity="0.94"/><circle cx="595.7" cy="67.1" r="3.60" opacity="0.91"/><circle cx="668.5" cy="40.0" r="2.21" opacity="0.65"/><circle cx="723.1" cy="143.6" r="0.54" opacity="0.61"/><circle cx="644.3" cy="124.3" r="0.55" opacity="0.92"/><circle cx="658.0" cy="-2.3" r="2.09" opacity="0.61"/><circle cx="590.2" cy="94.9" r="1.76" opacity="0.86"/><circle cx="643.0" cy="149.2" r="3.14" opacity="0.6"/></g>
+      <g fill="url(#gold)">
+        <circle cx="122" cy="142" r="3.2"/><circle cx="70" cy="131" r="2"/><circle cx="84" cy="125" r="2"/>
+        <circle cx="98" cy="120" r="2"/><circle cx="112" cy="116" r="1.8"/><circle cx="127" cy="113" r="1.6"/>
+      </g>
+    </svg>
+    <div class="hero-text">
+      <p class="script hero-script">A Picture Book of Three Fish &amp; the Sea</p>
+      <h1>三魚海味<br class="br-m">探索繪本</h1>
+      <p class="hero-sub">東港・蚵仔寮・大潭　海洋食農之旅</p>
+      <div class="hero-cta">
+        <a class="btn-gold" href="#film">▶ 觀看配音動畫</a>
+        <a class="btn-line" href="#book">翻閱繪本</a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#intro" aria-label="往下閱讀"><span></span></a>
+  </section>
+
+  <section class="intro reveal" id="intro">
+    <span class="gold-rule" aria-hidden="true"></span>
+    <p class="lede">東港喜宴上，爸爸一句「先別翻魚！」，讓好奇的小軒展開一趟海洋探索之旅——
+      從第一鮪進港的熱鬧魚市、冬季洄游的烏金，到大潭魚塭裡的龍虎斑，
+      最後在迎王祭典的星空下，明白海洋文化如何連結過去、現在與未來。</p>
+    <ul class="facts">
+      <li><b>16</b><span>頁插圖</span></li>
+      <li><b>3</b><span>種海洋魚類</span></li>
+      <li><b>6</b><span>分鐘配音動畫</span></li>
+    </ul>
+  </section>
+
+  <section class="film" id="film">
+    <div class="section-head reveal">
+      <span class="script">The Animated Film</span>
+      <h2>配音動畫</h2>
+      <p>點選下方章節，可直接跳到該頁的動畫。</p>
+    </div>
+    <div class="player reveal">
+      <div class="frame">
+        <video id="video" controls playsinline preload="none" poster="img/poster.jpg"></video>
+        <button class="big-play" id="bigPlay" aria-label="播放動畫"><span>▶</span></button>
+      </div>
+      <div class="now"><span class="script" id="nowNo">Prologue</span><span id="nowTitle">三魚海味探索繪本</span></div>
+    </div>
+    <ol class="chips reveal" id="chips">
+<li><button class="chip" data-t="4.30" data-page="1"><span class="chip-n">01</span><span class="chip-t">喜宴上的翻魚禁忌</span><span class="chip-time">0:04</span></button></li>
+<li><button class="chip" data-t="21.95" data-page="2"><span class="chip-n">02</span><span class="chip-t">東港飯湯</span><span class="chip-time">0:22</span></button></li>
+<li><button class="chip" data-t="46.27" data-page="3"><span class="chip-n">03</span><span class="chip-t">第一鮪進港</span><span class="chip-time">0:46</span></button></li>
+<li><button class="chip" data-t="71.75" data-page="4"><span class="chip-n">04</span><span class="chip-t">黑鮪魚游泳健將</span><span class="chip-time">1:11</span></button></li>
+<li><button class="chip" data-t="91.86" data-page="5"><span class="chip-n">05</span><span class="chip-t">延繩釣漁法</span><span class="chip-time">1:31</span></button></li>
+<li><button class="chip" data-t="112.59" data-page="6"><span class="chip-n">06</span><span class="chip-t">鮪魚飲食文化</span><span class="chip-time">1:52</span></button></li>
+<li><button class="chip" data-t="139.62" data-page="7"><span class="chip-n">07</span><span class="chip-t">東隆宮與漁村信仰</span><span class="chip-time">2:19</span></button></li>
+<li><button class="chip" data-t="162.43" data-page="8"><span class="chip-n">08</span><span class="chip-t">蚵仔寮魚市場</span><span class="chip-time">2:42</span></button></li>
+<li><button class="chip" data-t="185.71" data-page="9"><span class="chip-n">09</span><span class="chip-t">烏魚冬季洄游</span><span class="chip-time">3:05</span></button></li>
+<li><button class="chip" data-t="213.73" data-page="10"><span class="chip-n">10</span><span class="chip-t">老漁夫的竹筏故事</span><span class="chip-time">3:33</span></button></li>
+<li><button class="chip" data-t="236.43" data-page="11"><span class="chip-n">11</span><span class="chip-t">雙船合作圍捕</span><span class="chip-time">3:56</span></button></li>
+<li><button class="chip" data-t="254.24" data-page="12"><span class="chip-n">12</span><span class="chip-t">烏魚的團隊行動</span><span class="chip-time">4:14</span></button></li>
+<li><button class="chip" data-t="267.72" data-page="13"><span class="chip-n">13</span><span class="chip-t">大潭養殖魚塭</span><span class="chip-time">4:27</span></button></li>
+<li><button class="chip" data-t="292.71" data-page="14"><span class="chip-n">14</span><span class="chip-t">龍虎斑的身世</span><span class="chip-time">4:52</span></button></li>
+<li><button class="chip" data-t="311.61" data-page="15"><span class="chip-n">15</span><span class="chip-t">龍虎斑紙包魚料理</span><span class="chip-time">5:11</span></button></li>
+<li><button class="chip" data-t="333.51" data-page="16"><span class="chip-n">16</span><span class="chip-t">迎王祭典與星空</span><span class="chip-time">5:33</span></button></li>
+    </ol>
+  </section>
+
+  <section class="fish" id="fish">
+    <div class="section-head reveal">
+      <span class="script">Three Fish</span>
+      <h2>三魚海味</h2>
+      <p>故事裡的三位海洋主角</p>
+    </div>
+    <div class="fish-grid">
+
+<a class="fish-card reveal" href="#p03">
+  <div class="fish-img"><img src="img/p04_s.webp" alt="" loading="lazy" width="640" height="452"></div>
+  <div class="fish-body">
+    <span class="script">Bluefin Tuna</span>
+    <h3>黑鮪魚</h3>
+    <p>東港三寶之首，每年四到六月迎來黑鮪魚季；海洋中的游泳健將。</p>
+    <span class="more">從第 3 頁讀起 →</span>
+  </div>
+</a>
+
+<a class="fish-card reveal" href="#p09">
+  <div class="fish-img"><img src="img/p12_s.webp" alt="" loading="lazy" width="640" height="452"></div>
+  <div class="fish-body">
+    <span class="script">Grey Mullet</span>
+    <h3>烏魚</h3>
+    <p>冬季洄游的「烏金」，蚵仔寮漁民以竹筏、雙船合作圍捕。</p>
+    <span class="more">從第 9 頁讀起 →</span>
+  </div>
+</a>
+
+<a class="fish-card reveal" href="#p13">
+  <div class="fish-img"><img src="img/p14_s.webp" alt="" loading="lazy" width="640" height="452"></div>
+  <div class="fish-body">
+    <span class="script">Hybrid Grouper</span>
+    <h3>龍虎斑</h3>
+    <p>爸爸是龍膽石斑、媽媽是老虎斑，在大潭魚塭飼養十個月以上。</p>
+    <span class="more">從第 13 頁讀起 →</span>
+  </div>
+</a>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="section-head reveal">
+      <span class="script">The Picture Book</span>
+      <h2>繪本全文</h2>
+      <p>點插圖可放大閱讀，用左右鍵或滑動翻頁。</p>
+    </div>
+
+<article class="page reveal left" id="p01" data-page="1">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="1" aria-label="放大閱讀第 1 頁">
+      <img src="img/p01.webp" srcset="img/p01_s.webp 640w, img/p01.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 1 頁插圖：喜宴上的翻魚禁忌">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 01</span><span class="tag">序章 · 東港</span></div>
+    <h3>喜宴上的翻魚禁忌</h3>
+    <p>在屏東東港的喜宴上，小軒想要翻魚，爸爸說：「先別翻魚！」</p>
+<p>小軒歪著頭問爸爸為什麼?爸爸微笑的說：「這是漁村的禁忌，傳說翻魚等於翻船。」</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="4.30" data-page="1">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="1">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal right" id="p02" data-page="2">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="2" aria-label="放大閱讀第 2 頁">
+      <img src="img/p02.webp" srcset="img/p02_s.webp 640w, img/p02.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 2 頁插圖：東港飯湯">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 02</span><span class="tag">序章 · 東港</span></div>
+    <h3>東港飯湯</h3>
+    <p>好奇心滿滿的小軒決定展開探索之旅，前往屏東東港，品嚐當地特色午餐「東港飯湯」。</p>
+<p>東港飯湯包含：鮪魚肉、蝦猴、魚丸、魚板、蝦子、花枝、蚵仔、竹筍、芹菜等，搭配白飯與高湯，令人回味無窮。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="21.95" data-page="2">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="2">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal left" id="p03" data-page="3">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="3" aria-label="放大閱讀第 3 頁">
+      <img src="img/p03.webp" srcset="img/p03_s.webp 640w, img/p03.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 3 頁插圖：第一鮪進港">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 03</span><span class="tag">黑鮪魚 · 東港</span></div>
+    <h3>第一鮪進港</h3>
+    <p>來到東港漁港魚市場，熱鬧景象吸引了小軒的目光，他見證了叫賣第一尾黑鮪魚進港盛大的場面，象徵揭開一年一度黑鮪魚季序幕。</p>
+<p>每年四月到六月是東港黑鮪魚季的時期，黑鮪魚帶來漁業豐沛的收入及吸引觀光人潮，也讓黑鮪魚成為東港三寶之首。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="46.27" data-page="3">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="3">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal right" id="p04" data-page="4">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="4" aria-label="放大閱讀第 4 頁">
+      <img src="img/p04.webp" srcset="img/p04_s.webp 640w, img/p04.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 4 頁插圖：黑鮪魚游泳健將">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 04</span><span class="tag">黑鮪魚 · 東港</span></div>
+    <h3>黑鮪魚游泳健將</h3>
+    <p>小軒仔細觀察著黑鮪魚的模型，發現這種魚不僅體型巨大，還是海洋中的游泳健將。</p>
+<p>當黑鮪魚察覺到危險或要追捕獵物時，會降下背鰭，配合魚尾強而有力的擺動，以極快的速度前進。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="71.75" data-page="4">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="4">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal left" id="p05" data-page="5">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="5" aria-label="放大閱讀第 5 頁">
+      <img src="img/p05.webp" srcset="img/p05_s.webp 640w, img/p05.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 5 頁插圖：延繩釣漁法">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 05</span><span class="tag">黑鮪魚 · 東港</span></div>
+    <h3>延繩釣漁法</h3>
+    <p>東港漁港是全國排名前三大漁港，有近海及遠洋漁船，漁船種類從竹筏到CT6的玻璃纖維船都有。</p>
+<p>船長向小軒介紹「延繩釣漁法」，這就是「放緄仔（pàng kún á）」，一場充滿智慧與勇氣的冒險。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="91.86" data-page="5">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="5">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal right" id="p06" data-page="6">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="6" aria-label="放大閱讀第 6 頁">
+      <img src="img/p06.webp" srcset="img/p06_s.webp 640w, img/p06.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 6 頁插圖：鮪魚飲食文化">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 06</span><span class="tag">黑鮪魚 · 東港</span></div>
+    <h3>鮪魚飲食文化</h3>
+    <p>香港人稱鮪魚為「吞拿」，日本人稱鮪魚為「鮪（まぐろ／MAGURO）」，臺語稱作「串仔（tshǹg-á）」，而「トロ（TORO）」特指鮪魚富含脂肪的腹部。</p>
+<p>黑鮪魚經濟價值高，尤其第一鮪的價格通常會高達每公斤一萬元以上，所以整條魚至少價值上百萬元以上。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="112.59" data-page="6">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="6">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal left" id="p07" data-page="7">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="7" aria-label="放大閱讀第 7 頁">
+      <img src="img/p07.webp" srcset="img/p07_s.webp 640w, img/p07.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 7 頁插圖：東隆宮與漁村信仰">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 07</span><span class="tag">烏魚 · 蚵仔寮</span></div>
+    <h3>東隆宮與漁村信仰</h3>
+    <p>小軒跟著爺爺逛東隆宮，小軒抬頭一看發現匾額上出現「蚵仔寮」的地名，令他感到十分疑惑。</p>
+<p>爺爺說：「過去烏魚汛期間，高雄蚵仔寮有些漁民會特地前來東港，恭請溫王爺回去坐鎮，保佑漁民平安與豐收。」</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="139.62" data-page="7">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="7">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal right" id="p08" data-page="8">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="8" aria-label="放大閱讀第 8 頁">
+      <img src="img/p08.webp" srcset="img/p08_s.webp 640w, img/p08.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 8 頁插圖：蚵仔寮魚市場">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 08</span><span class="tag">烏魚 · 蚵仔寮</span></div>
+    <h3>蚵仔寮魚市場</h3>
+    <p>蚵仔寮過去是傳統漁村，如今轉型為熱鬧的觀光漁港。來到蚵仔寮，小軒走訪魚市場，看著各式各樣的海鮮，感受當地產業轉型的活力。</p>
+<p>小軒想起往年冬天在家享用的烏魚米粉，鮮美的滋味讓他難以忘懷。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="162.43" data-page="8">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="8">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal left" id="p09" data-page="9">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="9" aria-label="放大閱讀第 9 頁">
+      <img src="img/p09.webp" srcset="img/p09_s.webp 640w, img/p09.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 9 頁插圖：烏魚冬季洄游">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 09</span><span class="tag">烏魚 · 蚵仔寮</span></div>
+    <h3>烏魚冬季洄游</h3>
+    <p>每年冬季，烏魚群都會從北方洄游到蚵仔寮附近海域，與討海人精彩的搏鬥，並成為當地漁村重要的「烏金」。</p>
+<p>當烏魚察覺到危險時會往下游竄或跳出水面，所以漁夫們發展出一套圍捕魚群的特殊漁法。不過要面對龐大烏魚群強而有力的抵抗，仍是一件危險的工作。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="185.71" data-page="9">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="9">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal right" id="p10" data-page="10">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="10" aria-label="放大閱讀第 10 頁">
+      <img src="img/p10.webp" srcset="img/p10_s.webp 640w, img/p10.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 10 頁插圖：老漁夫的竹筏故事">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 10</span><span class="tag">烏魚 · 蚵仔寮</span></div>
+    <h3>老漁夫的竹筏故事</h3>
+    <p>蚵仔寮的夜晚，老漁夫講起早期烏魚汛期來臨時候，他們搭起臨時的藏仔寮，作為一起生活的臨時工寮。</p>
+<p>早期漁民乘坐竹筏出海，以「烏藏網」合力圍捕烏魚群，面對洶湧風浪的冒險故事，讓小軒深深著迷不已。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="213.73" data-page="10">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="10">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal left" id="p11" data-page="11">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="11" aria-label="放大閱讀第 11 頁">
+      <img src="img/p11.webp" srcset="img/p11_s.webp 640w, img/p11.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 11 頁插圖：雙船合作圍捕">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 11</span><span class="tag">烏魚 · 蚵仔寮</span></div>
+    <h3>雙船合作圍捕</h3>
+    <p>小軒腦海中浮現著漁筏追捕烏魚的景象，漸漸喜歡上蚵仔寮。</p>
+<p>在機動漁船盛行的年代，漁夫們採用兩艘船為一組協力的方式，使用一張「巾著網」圍捕烏魚群。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="236.43" data-page="11">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="11">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal right" id="p12" data-page="12">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="12" aria-label="放大閱讀第 12 頁">
+      <img src="img/p12.webp" srcset="img/p12_s.webp 640w, img/p12.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 12 頁插圖：烏魚的團隊行動">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 12</span><span class="tag">烏魚 · 蚵仔寮</span></div>
+    <h3>烏魚的團隊行動</h3>
+    <p>烏魚的集體行動令人著迷又興奮，烏魚是漁夫們可敬的對手。</p>
+<p>小軒看著烏魚胸鰭上的特有藍點，象徵著團隊的臂章。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="254.24" data-page="12">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="12">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal left" id="p13" data-page="13">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="13" aria-label="放大閱讀第 13 頁">
+      <img src="img/p13.webp" srcset="img/p13_s.webp 640w, img/p13.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 13 頁插圖：大潭養殖魚塭">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 13</span><span class="tag">龍虎斑 · 大潭</span></div>
+    <h3>大潭養殖魚塭</h3>
+    <p>氣候變遷導致海水暖化，野生烏魚主要漁場逐漸北移，且烏魚數量年年減少，於是人們開始將烏魚放養在魚塭中。</p>
+<p>結束蚵仔寮的漁村探索之旅，小軒回到東港大潭，參觀龍虎斑的養殖魚塭，明白了養殖業，是自己家鄉的重要產業之一。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="267.72" data-page="13">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="13">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal right" id="p14" data-page="14">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="14" aria-label="放大閱讀第 14 頁">
+      <img src="img/p14.webp" srcset="img/p14_s.webp 640w, img/p14.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 14 頁插圖：龍虎斑的身世">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 14</span><span class="tag">龍虎斑 · 大潭</span></div>
+    <h3>龍虎斑的身世</h3>
+    <p>原來龍虎斑的爸爸是龍膽石斑，媽媽是老虎斑，這讓小軒對這種混種魚充滿了好奇。</p>
+<p>大潭社區養殖場是引入大鵬灣的海水進來養殖龍虎斑，至少要飼養十個月才能捕撈。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="292.71" data-page="14">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="14">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal left" id="p15" data-page="15">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="15" aria-label="放大閱讀第 15 頁">
+      <img src="img/p15.webp" srcset="img/p15_s.webp 640w, img/p15.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 15 頁插圖：龍虎斑紙包魚料理">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 15</span><span class="tag">龍虎斑 · 大潭</span></div>
+    <h3>龍虎斑紙包魚料理</h3>
+    <p>烤龍虎斑？小軒心裡想著：這麼厚的魚，要怎麼烤才會熟呢？</p>
+<p>在廚房裡，小軒跟著姑姑學做龍虎斑的紙包魚料理。將魚片、檸檬與香料等巧妙地結合，變成一道美味又有趣的海鮮料理。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="311.61" data-page="15">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="15">放大閱讀</button>
+    </div>
+  </div>
+</article>
+
+<article class="page reveal right" id="p16" data-page="16">
+  <figure class="page-fig">
+    <button class="fig-btn" data-open="16" aria-label="放大閱讀第 16 頁">
+      <img src="img/p16.webp" srcset="img/p16_s.webp 640w, img/p16.webp 1600w"
+           sizes="(max-width: 860px) 100vw, 58vw" width="1600" height="1130" loading="lazy" decoding="async"
+           alt="第 16 頁插圖：迎王祭典與星空">
+    </button>
+  </figure>
+  <div class="page-text">
+    <div class="page-meta"><span class="script">No. 16</span><span class="tag">終章 · 東港</span></div>
+    <h3>迎王祭典與星空</h3>
+    <p>到最後，小軒參與了東港迎王平安祭典，看著巨大的王船在燃燒中消逝，期待千歲爺將所有的厄運都帶走。</p>
+<p>直到深夜，化王船的灰燼火花慢慢消失在藍色的星空中，遊天河的王船彷彿化變了魚的星座。這次探索讓他體會到，海洋文化已經成為人們生活中重要的一部分，連結著過去、現在到未來。</p>
+    <div class="page-actions">
+      <button class="btn-line" data-t="333.51" data-page="16">▶ 觀看本頁動畫</button>
+      <button class="btn-line ghost" data-open="16">放大閱讀</button>
+    </div>
+  </div>
+</article>
+  </section>
+</main>
+
+<footer class="footer">
+  <span class="gold-rule" aria-hidden="true"></span>
+  <p class="script">Thank you for reading</p>
+  <p>三魚海味探索繪本　·　土城國小 遊學食農</p>
+  <p class="small">動畫由 Google Flow（Veo 3.1）依繪本插圖生成；旁白為 AI 語音合成。</p>
+</footer>
+
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-label="繪本閱讀" hidden>
+  <button class="r-close" id="rClose" aria-label="關閉">✕</button>
+  <button class="r-nav r-prev" id="rPrev" aria-label="上一頁">‹</button>
+  <button class="r-nav r-next" id="rNext" aria-label="下一頁">›</button>
+  <div class="r-stage">
+    <img id="rImg" alt="">
+    <div class="r-text">
+      <div class="page-meta"><span class="script" id="rNo"></span><span class="tag" id="rCount"></span></div>
+      <h3 id="rTitle"></h3>
+      <div id="rBody"></div>
+      <button class="btn-line" id="rPlay">▶ 觀看本頁動畫</button>
+    </div>
+  </div>
+</div>
+
+<script>window.BOOK = [{"t": "喜宴上的翻魚禁忌", "p": ["在屏東東港的喜宴上，小軒想要翻魚，爸爸說：「先別翻魚！」", "小軒歪著頭問爸爸為什麼?爸爸微笑的說：「這是漁村的禁忌，傳說翻魚等於翻船。」"]}, {"t": "東港飯湯", "p": ["好奇心滿滿的小軒決定展開探索之旅，前往屏東東港，品嚐當地特色午餐「東港飯湯」。", "東港飯湯包含：鮪魚肉、蝦猴、魚丸、魚板、蝦子、花枝、蚵仔、竹筍、芹菜等，搭配白飯與高湯，令人回味無窮。"]}, {"t": "第一鮪進港", "p": ["來到東港漁港魚市場，熱鬧景象吸引了小軒的目光，他見證了叫賣第一尾黑鮪魚進港盛大的場面，象徵揭開一年一度黑鮪魚季序幕。", "每年四月到六月是東港黑鮪魚季的時期，黑鮪魚帶來漁業豐沛的收入及吸引觀光人潮，也讓黑鮪魚成為東港三寶之首。"]}, {"t": "黑鮪魚游泳健將", "p": ["小軒仔細觀察著黑鮪魚的模型，發現這種魚不僅體型巨大，還是海洋中的游泳健將。", "當黑鮪魚察覺到危險或要追捕獵物時，會降下背鰭，配合魚尾強而有力的擺動，以極快的速度前進。"]}, {"t": "延繩釣漁法", "p": ["東港漁港是全國排名前三大漁港，有近海及遠洋漁船，漁船種類從竹筏到CT6的玻璃纖維船都有。", "船長向小軒介紹「延繩釣漁法」，這就是「放緄仔（pàng kún á）」，一場充滿智慧與勇氣的冒險。"]}, {"t": "鮪魚飲食文化", "p": ["香港人稱鮪魚為「吞拿」，日本人稱鮪魚為「鮪（まぐろ／MAGURO）」，臺語稱作「串仔（tshǹg-á）」，而「トロ（TORO）」特指鮪魚富含脂肪的腹部。", "黑鮪魚經濟價值高，尤其第一鮪的價格通常會高達每公斤一萬元以上，所以整條魚至少價值上百萬元以上。"]}, {"t": "東隆宮與漁村信仰", "p": ["小軒跟著爺爺逛東隆宮，小軒抬頭一看發現匾額上出現「蚵仔寮」的地名，令他感到十分疑惑。", "爺爺說：「過去烏魚汛期間，高雄蚵仔寮有些漁民會特地前來東港，恭請溫王爺回去坐鎮，保佑漁民平安與豐收。」"]}, {"t": "蚵仔寮魚市場", "p": ["蚵仔寮過去是傳統漁村，如今轉型為熱鬧的觀光漁港。來到蚵仔寮，小軒走訪魚市場，看著各式各樣的海鮮，感受當地產業轉型的活力。", "小軒想起往年冬天在家享用的烏魚米粉，鮮美的滋味讓他難以忘懷。"]}, {"t": "烏魚冬季洄游", "p": ["每年冬季，烏魚群都會從北方洄游到蚵仔寮附近海域，與討海人精彩的搏鬥，並成為當地漁村重要的「烏金」。", "當烏魚察覺到危險時會往下游竄或跳出水面，所以漁夫們發展出一套圍捕魚群的特殊漁法。不過要面對龐大烏魚群強而有力的抵抗，仍是一件危險的工作。"]}, {"t": "老漁夫的竹筏故事", "p": ["蚵仔寮的夜晚，老漁夫講起早期烏魚汛期來臨時候，他們搭起臨時的藏仔寮，作為一起生活的臨時工寮。", "早期漁民乘坐竹筏出海，以「烏藏網」合力圍捕烏魚群，面對洶湧風浪的冒險故事，讓小軒深深著迷不已。"]}, {"t": "雙船合作圍捕", "p": ["小軒腦海中浮現著漁筏追捕烏魚的景象，漸漸喜歡上蚵仔寮。", "在機動漁船盛行的年代，漁夫們採用兩艘船為一組協力的方式，使用一張「巾著網」圍捕烏魚群。"]}, {"t": "烏魚的團隊行動", "p": ["烏魚的集體行動令人著迷又興奮，烏魚是漁夫們可敬的對手。", "小軒看著烏魚胸鰭上的特有藍點，象徵著團隊的臂章。"]}, {"t": "大潭養殖魚塭", "p": ["氣候變遷導致海水暖化，野生烏魚主要漁場逐漸北移，且烏魚數量年年減少，於是人們開始將烏魚放養在魚塭中。", "結束蚵仔寮的漁村探索之旅，小軒回到東港大潭，參觀龍虎斑的養殖魚塭，明白了養殖業，是自己家鄉的重要產業之一。"]}, {"t": "龍虎斑的身世", "p": ["原來龍虎斑的爸爸是龍膽石斑，媽媽是老虎斑，這讓小軒對這種混種魚充滿了好奇。", "大潭社區養殖場是引入大鵬灣的海水進來養殖龍虎斑，至少要飼養十個月才能捕撈。"]}, {"t": "龍虎斑紙包魚料理", "p": ["烤龍虎斑？小軒心裡想著：這麼厚的魚，要怎麼烤才會熟呢？", "在廚房裡，小軒跟著姑姑學做龍虎斑的紙包魚料理。將魚片、檸檬與香料等巧妙地結合，變成一道美味又有趣的海鮮料理。"]}, {"t": "迎王祭典與星空", "p": ["到最後，小軒參與了東港迎王平安祭典，看著巨大的王船在燃燒中消逝，期待千歲爺將所有的厄運都帶走。", "直到深夜，化王船的灰燼火花慢慢消失在藍色的星空中，遊天河的王船彷彿化變了魚的星座。這次探索讓他體會到，海洋文化已經成為人們生活中重要的一部分，連結著過去、現在到未來。"]}]; window.STARTS = [0, 3.9, 21.55, 45.87, 71.35, 91.46, 112.19, 139.22, 162.03, 185.31, 213.33, 236.03, 253.84, 267.32, 292.31, 311.21, 333.11];</script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
